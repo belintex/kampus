@@ -5253,3 +5253,14 @@ span.r_acara span.not{/*not*/
   }
   /*END view-1 dan view-2*/
 }
+@media (min-width: 1200px) {
+  .hot_deals_area{
+    padding-top: 120px !important;
+  }
+  .section_gap{
+    padding: 7px 0px 20px 0;
+  }
+}
+.deskripsi-area{
+  padding-top: 60px !important;
+}

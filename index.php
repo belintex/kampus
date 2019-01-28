@@ -4,15 +4,70 @@
 		<div class="overlay"></div>
 		<div class="banner_inner d-flex align-items-center">
 			<div class="container-fluid">
+				<style type="text/css">
+					.banner_content{
+						display: flex;
+						justify-content: center;
+						flex-direction: column;
+						padding-top: 50px !important;
+					}
+					.tengah{
+						display: flex;
+						justify-content: center;
+					}
+					.populer{
+						width: 400px;
+						min-height: 100px;
+						padding: 0 10px 0 10px;
+						/*display: flex;*/
+					}
+					.populer a{
+						color: white;
+						font-weight: 500;
+						border:1px solid white;
+						padding: 2px 4px 2px 4px;
+						line-height: 28px;
+					}
+					.populer a:hover{
+						background: white;
+						border:1px solid black;
+						color: black;
+
+					}
+					.x-button{
+						margin:28px auto 0 auto;
+						padding-top: 0px;
+						padding-bottom: 0px;
+						height: 45px;
+						line-height: 45px;
+					}
+				</style>
 				<div class="banner_content row">
-					<div class="offset-lg-2 col-lg-8">
-						<h3>Kampus Link
-							<br />Event</h3>
-						<p>Membuat kamu lebih mudah untuk mencari event yang diinginkan. Pada tahap ini kami dalam 
-						pengembangan ke seluruh
-						    organisasi di Universitas Andalas, nantikan kami di kampus kamu gays.</p>
+					
+					<div class="offset-lg-2 col-lg-8 tengah">
+
+						<div class="populer">
+							<a href="#">DOTA 2</a>
+							<a href="#">PUBG</a>
+							<a href="#">FREE FIRE</a>
+							<a href="#">MOBILE LEGEND</a>
+							<a href="#">PELATIHAN ANDROID</a>
+							<a href="#">DOTA 2</a>
+							<a href="#">PUBG</a>
+							<a href="#">FREE FIRE</a>
+							<a href="#">MOBILE LEGEND</a>
+							<a href="#">PELATIHAN ANDROID</a>
+							<a href="#">DOTA 2</a>
+							<a href="#">PUBG</a>
+							<a href="#">FREE FIRE</a>
+							<a href="#">MOBILE LEGEND</a>
+							<a href="#">PELATIHAN ANDROID</a>
+						</div>
+					</div>
+					<div class="tengah">
 						<a class="x-button" href="category.php">Lihat Event</a>
 					</div>
+					
 				</div>
 <div class="search-menu"></div>
 				<div class="search-box col-lg-10">
@@ -502,3 +557,5 @@ $(document).ready(function(){
 });
 </script>
 </body>
+
+</html>
