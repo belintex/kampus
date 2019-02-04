@@ -1,3 +1,0 @@
-index.php, login.php, registration.php, cart.php.
-file itu ajo ekskusi dlu yuu...
-pindahan k laravel skalian back_endnyo..

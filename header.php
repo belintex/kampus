@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en">
 
 <head>
@@ -114,10 +114,38 @@
 
 									<!-- <hr> -->
 
-									<li class="nav-item">
+									<!-- ###LOGIN### -->
+									<!-- <li class="nav-item">
 										<a href="login.php" class="login">
 											LOGIN
 										</a>
+									</li> -->
+									<!-- ###DASHBOARD### -->
+									<li class="nav-item">
+										<a href="#" class="login">
+											<img src="img/clients-logo/user.png">
+											<span>4</span>
+										</a>
+										<div class="mediaD">
+											<div class="header">
+												<div>
+													<img src="img/clients-logo/user.png" width="50">
+												</div>
+												<div>
+													<h4>Nama Lengkap</h4>
+													<p>email@email.com</p>
+												</div>
+											</div>
+											<div class="body">
+												<ul>
+													<li><a href="transaksi.php"><i class="fa fa-ticket"></i> Transaksi&Tiket</a> <span>4</span></li>
+													<li><a href="profil.php"><i class="fa fa-cog"></i> Edit Profil</a></li>
+												</ul>
+												<div class="logout">
+													<a href="login.php">Logout</a>
+												</div>
+											</div>
+										</div>
 									</li>
 
 									<!-- <hr> -->

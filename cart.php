@@ -43,60 +43,53 @@
 									</div>
 								</td>
 								<td>
-									<span class="jenis">Reguler<a href="#">ubah</a></span>
+									<span class="jenis">Reguler</span>
 								</td>
 								<td>
-									<h5>$360.00</h5>
+									<h5>Rp 25,000</h5>
 								</td>
 								<td>
 									<div class="product_count">
-										<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+										<input type="text" name="qty1" id="sst" maxlength="12" value="0" title="Quantity:" class="input-text qty">
+										<input type="hidden" id="qty_1">
 										<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-										 class="increase items-count" type="button">
+										 class="increase items-count btn-plus-1" type="button">
 											<i class="lnr lnr-chevron-up"></i>
 										</button>
 										<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-										 class="reduced items-count" type="button">
+										 class="reduced items-count btn-min-1" type="button">
 											<i class="lnr lnr-chevron-down"></i>
 										</button>
 									</div>
 								</td>
 								<td>
-									<h5>$720.00</h5>
+									<h5>Rp <span id="total-1">0</span></h5>
 								</td>
 							</tr>
 							<tr>
+								<td></td>
 								<td>
-									<div class="media">
-										<div class="d-flex">
-											Firetech	
-										</div>
-										<div class="media-body">
-											<p>Seminar Mikrotik</p>
-										</div>
-									</div>
+									<span class="jenis">VIP</span>
 								</td>
 								<td>
-									<span class="jenis">VIP<a href="#">ubah</a></span>
-								</td>
-								<td>
-									<h5>$360.00</h5>
+									<h5>Rp 35,000</h5>
 								</td>
 								<td>
 									<div class="product_count">
-										<input type="text" name="qty" id="sst2" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+										<input type="text" name="qty2" id="sst2" maxlength="12" value="0" title="Quantity:" class="input-text qty">
+										<input type="hidden" id="qty_2">
 										<button onclick="var result = document.getElementById('sst2'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
-										 class="increase items-count" type="button">
+										 class="increase items-count btn-plus-2" type="button">
 											<i class="lnr lnr-chevron-up"></i>
 										</button>
 										<button onclick="var result = document.getElementById('sst2'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
-										 class="reduced items-count" type="button">
+										 class="reduced items-count btn-min-2" type="button">
 											<i class="lnr lnr-chevron-down"></i>
 										</button>
 									</div>
 								</td>
 								<td>
-									<h5>$720.00</h5>
+									<h5>Rp <span id="total-2">0</span></h5>
 								</td>
 							</tr>
 							<tr>
@@ -113,7 +106,7 @@
 									<h5>Subtotal</h5>
 								</td>
 								<td>
-									<h5>$2160.00</h5>
+									<h5>Rp <span id="subtotal">0</span></h5>
 								</td>
 							</tr>
 							<tr class="out_button_area">
@@ -143,37 +136,6 @@
 		</div>
 	</section>
 	<!--================End Cart Area =================-->
-
-	<!--================ Subscription Area ================-->
-	<section class="subscription-area section_gap">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title text-center">
-						<h2>Subscribe for Our Newsletter</h2>
-						<span>We won’t send any kind of spam</span>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div id="mc_embed_signup">
-						<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01"
-						 method="get" class="subscription relative">
-							<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'"
-							 required="">
-							<!-- <div style="position: absolute; left: -5000px;">
-									<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
-								</div> -->
-							<button type="submit" class="newsl-btn">Get Started</button>
-							<div class="info"></div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Subscription Area ================-->
 
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
@@ -269,23 +231,67 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="vendors/jquery-ui/jquery-ui.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.js"></script>
-	<script src="js/theme.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope-min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="vendors/jquery-ui/jquery-ui.js"></script>
+<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+<script src="vendors/counter-up/jquery.counterup.js"></script>
+<script src="js/theme.js"></script>
+<!-- script untuk cart -->
+<script>
+$(document).ready(function(){
+	// reguler
+	$('#sst').on("keyup", function(){jumlah_1();subtotal()});
+	$('.btn-plus-1').click(function(){jumlah_1();subtotal()});
+	$('.btn-min-1').click(function(){jumlah_1();subtotal()});
+	function jumlah_1(){	
+		var qty = $('#sst').val();
+		var reguler = 25000;
+		var total = qty*reguler;
+		$('#total-1').text(new Intl.NumberFormat('en-CA', {style: 'decimal'}).format(total));
+		$('#qty_1').val(total);
+	}
+	// VIP
+	$('#sst2').on("keyup", function(){jumlah_2();subtotal()});
+	$('.btn-plus-2').click(function(){jumlah_2();subtotal()});
+	$('.btn-min-2').click(function(){jumlah_2();subtotal()});
+	function jumlah_2(){	
+		var qty = $('#sst2').val();
+		var reguler = 35000;
+		var total = qty*reguler;
+		$('#total-2').text(new Intl.NumberFormat('en-CA', {style: 'decimal'}).format(total));
+		$('#qty_2').val(total);
+	}
+	// subtotal
+	function subtotal(){
+		var subtotal = 0; 
+		var qty_1 = parseInt($('#qty_1').val());
+		var qty_2 = parseInt($('#qty_2').val());
+		if (!qty_1) {
+			subtotal = qty_2;
+		}
+		else if (!qty_2){
+			subtotal = qty_1;
+		}
+		else{
+			subtotal = qty_1+qty_2;
+		}	
+		// alert(subtotal);
+		$('#subtotal').text(new Intl.NumberFormat('en-CA', {style: 'decimal'}).format(subtotal));
+	}
+});
+</script>
 </body>
 
 </html>

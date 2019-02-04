@@ -20,7 +20,7 @@
 	<div class="product_image_area">
 		<div class="container">
 			<div class="row s_product_inner">
-				<div class="col-lg-7">
+				<div class="col-lg-6">
 					<div class="s_product_img">
 						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							<!-- <ol class="carousel-indicators">
@@ -48,12 +48,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-5">
+				<div class="col-lg-6">
 					<div class="s_product_text">
 						<div>
 							<h2>DETAIL INFO</h2>
 						</div>
-						<div>
+						<div class="detail">
+							<div class="content">
 							<ul class="list">
 								<li>
 									<a class="active" href="#">
@@ -74,115 +75,181 @@
 								<li>
 									<a href="#"><img src="img/clients-logo/line.png"> id_line</a>
 								</li>
+								<li>
+									<a href="#"><img src="img/clients-logo/web.png"> neotelemtri.com</a>
+								</li>
 							</ul>
-							<p>Rangkaian Acara :</p>
-							<!-- <ol>
-								<li>Lomba Mikrotik <span class="kategori"><i class="fa fa-th-large"></i> teknologi</span> <span class="tiket"><a href="#">e-tiket</a></span></li>
-								<li>Lomba Hackathon <span class="kategori"><i class="fa fa-th-large"></i> teknologi</span> <span class="tiket"><a href="#">e-tiket</a></span></li>
-								<li>Lomba Desain Grafis <span class="kategori"><i class="fa fa-th-large"></i> desain</span> <span class="tiket"><a href="#">e-tiket</a></span></li>
-								<li>Lomba PUBG <span class="kategori"><i class="fa fa-th-large"></i> game</span> <span class="tiket"><a href="#">e-tiket</a></span></li>
-							</ol> -->
-							<table class="t_acara" width="100%">
-								<tr>
-									<td>1. </td>
-									<td><span class="r_acara">Seminar Mikrotik 
-										<!-- <a href="cart.php"><span> e-tiket <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
-										<span class="total">total = 20</span> -->
-									</span></td>
-								</tr>
-								<tr>
-									<td>2. </td>
-									<td><span class="r_acara">Lomba Hackathon
-										<!-- <a href="cart.php"><span> e-tiket <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
-										<span class="total">total = 20</span> -->
-									</span></td>
-								</tr>
-								<tr>
-									<td>3. </td>
-									<td><span class="r_acara">Seminar Google Bisnisku
-										<!-- <span class="not">tidak ada tiket</span> -->
-									</span></td>
-								</tr>
-								<tr>
-									<td>4. </td>
-									<td><span class="r_acara">Lomba PUBG
-										<!-- <a href="cart.php"><span> e-tiket <i class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
-										<span class="total">total = 20</span> -->
-									</span></td>
-								</tr>
-							</table>
+							</div>
+							<div class="qr">
+								<img src="img/clients-logo/qr-kode.png">
+							</div>
 						</div>
 						
-						<!-- <div class="card_area"> -->
-							<!-- <a class="main_btn" href="#">Beli Tiket</a> -->
-							<!-- <a class="icon_btn qr" href="img/clients-logo/qr-kode.png">
-								<i class="fa fa-qrcode"></i>
-							</a> -->
-							<!-- <a class="icon_btn" href="#">
-								<i class="lnr lnr lnr-heart"></i>
-							</a> -->
-						<!-- </div> -->
-						<!-- <div class="card_area share">
-							<span>Bagikan</span>
-						</div> -->
 					</div>
+
+									<!-- Deskripsi Event -->
+					<section class="deskripsi-area section_gap">
+						<div class="container">
+							<div class="content">
+								<div class="title">
+									<h2>JUDUL UTAMA EVENT</h2>
+									<p>Sabtu, 25 Juni 2019 </p>
+								</div>
+								<div class="desk">
+									<p>Di sini adalah bagian tempat penerbit menjelaskan tentang event yang akan di adakan secara detail, bagian ini adalah yang paling penting karena akan menentukan apakah acara yang di adakan adalah acara yang menarik atau tidak.
+									Semua tulisan di sini bebas asalkan tidak melanggar hukum yang berlaku di Indonesia karena Indonesia sangat sensitif dan banyak mengatur kata-kata di undang-undang yang di rancang oleh pemerintah, terlebih lagi apabila anda menggunakan kata-kata yang menggandung SARA, maka itu bisa menjadi masalah besar.
+									Apa yang dimaksud dengan SARA? itu adalah kependekan dari Suku, Agama, Ras, dan Antar Golongan. Semua dari kategori tersebut dapat memicu perselisihan bahkan bisa mengakibatkan korban jiwa. oleh karena itulah kalimat tersebut tidak boleh digunakan.</p>
+								</div>
+								<div class="e-tiket">
+									<a href="cart.php">BELI TIKET</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- END Deskripsi Event -->
+
+
 				</div>
 			</div>
 		</div>
 	</div>
 	<!--================End Single Product Area =================-->
 
-	<!-- Deskripsi Event -->
-	<section class="deskripsi-area section_gap">
-		<div class="container">
-			<div class="content">
-				<div class="title">
-					<h2>JUDUL UTAMA EVENT</h2>
-					<p>Sabtu, 25 Juni 2019 </p>
+	<!--================Feature Product Area =================-->
+	<section class="feature_product_area section_gap">
+		<div class="container-fluid">
+			<h4>Event Disarankan</h4>
+			<div class="sliderx-set">
+				<!-- box set 1 -->
+				<div class="box-set">
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/1.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/2.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/3.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/4.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/5.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
 				</div>
-				<div class="desk">
-					<p>Di sini adalah bagian tempat penerbit menjelaskan tentang event yang akan di adakan secara detail, bagian ini adalah yang paling penting karena akan menentukan apakah acara yang di adakan adalah acara yang menarik atau tidak.
-					Semua tulisan di sini bebas asalkan tidak melanggar hukum yang berlaku di Indonesia karena Indonesia sangat sensitif dan banyak mengatur kata-kata di undang-undang yang di rancang oleh pemerintah, terlebih lagi apabila anda menggunakan kata-kata yang menggandung SARA, maka itu bisa menjadi masalah besar.
-					Apa yang dimaksud dengan SARA? itu adalah kependekan dari Suku, Agama, Ras, dan Antar Golongan. Semua dari kategori tersebut dapat memicu perselisihan bahkan bisa mengakibatkan korban jiwa. oleh karena itulah kalimat tersebut tidak boleh digunakan.</p>
-				</div>
-				<div class="e-tiket">
-					<a href="cart.php">BELI TIKET</a>
+				<!-- box set 2 -->
+				<div class="box-set">
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/6.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/7.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/8.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/9.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
+					<a href="single-product.php">
+					<div class="box">
+						<div class="box-image">
+							<img src="img/product/feature-product/7.jpeg">
+						</div>
+						<div class="content">
+							<span class="title">Judul</span>
+							<span class="waktu">SABTU, 4 APRIL 2019</span>
+							<span class="lokasi">TAMAN BUDAYA, PADANG</span>
+						</div>
+					</div>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- END Deskripsi Event -->
-
-	<!--================ Subscription Area ================-->
-	<section class="subscription-area section_gap">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title text-center">
-						<h2>Subscribe for Our Newsletter</h2>
-						<span>We won’t send any kind of spam</span>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div id="mc_embed_signup">
-						<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01"
-						 method="get" class="subscription relative">
-							<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'"
-							 required="">
-							<!-- <div style="position: absolute; left: -5000px;">
-									<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
-								</div> -->
-							<button type="submit" class="newsl-btn">Get Started</button>
-							<div class="info"></div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Subscription Area ================-->
+	<!--================End Feature Product Area =================-->
 
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
@@ -295,6 +362,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
 <script src="vendors/counter-up/jquery.counterup.js"></script>
 <script src="js/theme.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  $('.sliderx-set').bxSlider();
+	});
+</script>
 <script type="text/javascript">
 $(document).ready(function(){
 	var lightbox = $('.card_area a.icon_btn.qr').simpleLightbox();

@@ -1,171 +1,135 @@
-<?php include"header.php" ?> 
-	<!--================Home Banner Area =================-->
-	<section class="banner_area">
-		<div class="banner_inner d-flex align-items-center">
-			<div class="container">
-				<div class="banner_content text-center">
-					<h2>Order Confirmation</h2>
-					<div class="page_link">
-						<a href="index.html">Home</a>
-						<a href="confirmation.html">Confirmation</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Home Banner Area =================-->
+<?php 
+include"header.php"; 
+if ($_GET['page']==1) {
+?> 
 
 	<!--================Order Details Area =================-->
 	<section class="order_details p_120">
 		<div class="container">
-			<h3 class="title_confirmation">Terima Kasih. e-tiket kamu akan kami proses setelah melakukan pembayaran.</h3>
+			<div class="alert alert-success" role="alert">
+			  Terima Kasih. e-tiket kamu akan kami proses setelah melakukan pembayaran.
+			</div>
 			<div class="row order_d_inner">
 				<div class="col-lg-4">
 					<div class="details_item">
-						<h4>Order Info</h4>
+						<h4>Info Pembayaran</h4>
 						<ul class="list">
 							<li>
 								<a href="#">
-									<span>Order number</span> : 60235</a>
+									<span>Kode Pembayaran</span> : #xyz</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>Date</span> : Los Angeles</a>
+									<span>Tanggal Pemesanan</span> : 2 Januari 2019</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>Total</span> : USD 2210</a>
+									<span>Total</span> : Rp 100,000</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>Payment method</span> : Check payments</a>
+									<span>Status</span> : Menunggu Pembayaran</a>
+									<!-- <span>Status</span> : Pembayaran Berhasil</a> -->
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="details_item">
-						<h4>Billing Address</h4>
+						<h4>Organisasi</h4>
 						<ul class="list">
 							<li>
 								<a href="#">
-									<span>Street</span> : 56/8</a>
+									<span>Nama Organisasi</span> : Neo Telemetri</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>City</span> : Los Angeles</a>
+									<span>Kampus</span> : Universitas Andalas</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>Country</span> : United States</a>
+									<span>Waktu Pembayaran</span> : <div id="waktu_pembayaran"></div></a>
 							</li>
 							<li>
 								<a href="#">
-									<span>Postcode </span> : 36952</a>
+									<span>Link Tiket</span> : Belum Ada</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="details_item">
-						<h4>Shipping Address</h4>
+						<h4>Pembeli</h4>
 						<ul class="list">
 							<li>
 								<a href="#">
-									<span>Street</span> : 56/8</a>
+									<span>Nama</span> : Nama Lengkap</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>City</span> : Los Angeles</a>
+									<span>Kampus</span> : Universitas Andalas</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>Country</span> : United States</a>
+									<span>Fakultas</span> : Teknik</a>
 							</li>
 							<li>
 								<a href="#">
-									<span>Postcode </span> : 36952</a>
+									<span>Jurusan </span> : Teknik Mesin</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="order_details_table">
-				<h2>Order Details</h2>
+				<h2>Detail Pembayaran</h2>
 				<div class="table-responsive">
-					<table class="table">
+					<table class="table" width="100%">
 						<thead>
 							<tr>
-								<th scope="col">Product</th>
-								<th scope="col">Quantity</th>
+								<th scope="col">Event</th>
+								<th scope="col">Jenis</th>
+								<th scope="col">Jumlah</th>
 								<th scope="col">Total</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>
-									<p>Pixelstore fresh Blackberry</p>
+									<p>Hackathon</p>
+								</td>
+								<td>
+									<p>Reguler</p>
 								</td>
 								<td>
 									<h5>x 02</h5>
 								</td>
 								<td>
-									<p>$720.00</p>
+									<p>Rp 50,000</p>
 								</td>
 							</tr>
 							<tr>
+								<td></td>
 								<td>
-									<p>Pixelstore fresh Blackberry</p>
+									<p>VIP</p>
 								</td>
 								<td>
 									<h5>x 02</h5>
 								</td>
 								<td>
-									<p>$720.00</p>
+									<p>Rp 100,000</p>
 								</td>
 							</tr>
 							<tr>
-								<td>
-									<p>Pixelstore fresh Blackberry</p>
-								</td>
-								<td>
-									<h5>x 02</h5>
-								</td>
-								<td>
-									<p>$720.00</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>Subtotal</h4>
+								<td colspan="2">
+									<h4>Total SEMUA</h4>
 								</td>
 								<td>
 									<h5></h5>
 								</td>
 								<td>
-									<p>$2160.00</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>Shipping</h4>
-								</td>
-								<td>
-									<h5></h5>
-								</td>
-								<td>
-									<p>Flat rate: $50.00</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>Total</h4>
-								</td>
-								<td>
-									<h5></h5>
-								</td>
-								<td>
-									<p>$2210.00</p>
+									<p>Rp 150,000</p>
 								</td>
 							</tr>
 						</tbody>
@@ -175,37 +139,569 @@
 		</div>
 	</section>
 	<!--================End Order Details Area =================-->
-
-	<!--================ Subscription Area ================-->
-	<section class="subscription-area section_gap">
+<?php 
+}
+if ($_GET['page']==2) {
+?>
+	<!--================Order Details Area =================-->
+	<section class="order_details p_120">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<div class="section-title text-center">
-						<h2>Subscribe for Our Newsletter</h2>
-						<span>We won’t send any kind of spam</span>
+			<div class="alert alert-warning" role="alert">
+			  Maaf. e-tiket kamu tidak kami proses karna melewati jangka waktu pembayaran.
+			</div>
+			<div class="row order_d_inner">
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Info Pembayaran</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Kode Pembayaran</span> : #xyz</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Tanggal Pemesanan</span> : 2 Januari 2019</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Total</span> : Rp 100,000</a>
+							</li>
+							<li>
+								<a href="#">
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+									<span>Status</span> : Pembayaran Dibatalkan</a>
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Organisasi</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama Organisasi</span> : Neo Telemetri</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Waktu Pembayaran</span> : <div id="waktu_pembayaran"></div></a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Link Tiket</span> : Belum Ada</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Pembeli</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama</span> : Nama Lengkap</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Fakultas</span> : Teknik</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Jurusan </span> : Teknik Mesin</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div id="mc_embed_signup">
-						<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01"
-						 method="get" class="subscription relative">
-							<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'"
-							 required="">
-							<!-- <div style="position: absolute; left: -5000px;">
-									<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
-								</div> -->
-							<button type="submit" class="newsl-btn">Get Started</button>
-							<div class="info"></div>
-						</form>
-					</div>
+			<div class="order_details_table">
+				<h2>Detail Pembayaran</h2>
+				<div class="table-responsive">
+					<table class="table" width="100%">
+						<thead>
+							<tr>
+								<th scope="col">Event</th>
+								<th scope="col">Jenis</th>
+								<th scope="col">Jumlah</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>Hackathon</p>
+								</td>
+								<td>
+									<p>Reguler</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 50,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<p>VIP</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 100,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<h4>Total SEMUA</h4>
+								</td>
+								<td>
+									<h5></h5>
+								</td>
+								<td>
+									<p>Rp 150,000</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================ End Subscription Area ================-->
+	<!--================End Order Details Area =================-->
+<?php 
+}
+if ($_GET['page']==3) {
+?>
+		<!--================Order Details Area =================-->
+	<section class="order_details p_120">
+		<div class="container">
+			<div class="alert alert-primary" role="alert">
+			  Mohon tunggu, tiket kamu sedang diproses.
+			</div>
+			<div class="row order_d_inner">
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Info Pembayaran</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Kode Pembayaran</span> : #xyz</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Tanggal Pemesanan</span> : 2 Januari 2019</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Total</span> : Rp 100,000</a>
+							</li>
+							<li>
+								<a href="#">
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+									<span>Status</span> : Diproses</a>
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Organisasi</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama Organisasi</span> : Neo Telemetri</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Waktu Pembayaran</span> : -</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Link Tiket</span> : Diproses</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Pembeli</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama</span> : Nama Lengkap</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Fakultas</span> : Teknik</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Jurusan </span> : Teknik Mesin</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="order_details_table">
+				<h2>Detail Pembayaran</h2>
+				<div class="table-responsive">
+					<table class="table" width="100%">
+						<thead>
+							<tr>
+								<th scope="col">Event</th>
+								<th scope="col">Jenis</th>
+								<th scope="col">Jumlah</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>Hackathon</p>
+								</td>
+								<td>
+									<p>Reguler</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 50,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<p>VIP</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 100,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<h4>Total SEMUA</h4>
+								</td>
+								<td>
+									<h5></h5>
+								</td>
+								<td>
+									<p>Rp 150,000</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Order Details Area =================-->
+<?php
+}
+if ($_GET['page']==4){
+?>
+	<!--================Order Details Area =================-->
+	<section class="order_details p_120">
+		<div class="container">
+			<div class="alert alert-danger" role="alert">
+			  Maaf, tiket kamu ditolak mungkin dikarenakan kapasitas tiket sudah full atau hal lainnya, segera hubungi kami!
+			</div>
+			<div class="row order_d_inner">
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Info Pembayaran</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Kode Pembayaran</span> : #xyz</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Tanggal Pemesanan</span> : 2 Januari 2019</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Total</span> : Rp 100,000</a>
+							</li>
+							<li>
+								<a href="#">
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+									<span>Status</span> : Ditolak</a>
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Organisasi</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama Organisasi</span> : Neo Telemetri</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Waktu Pembayaran</span> : -</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Link Tiket</span> : Ditolak</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Pembeli</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama</span> : Nama Lengkap</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Fakultas</span> : Teknik</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Jurusan </span> : Teknik Mesin</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="order_details_table">
+				<h2>Detail Pembayaran</h2>
+				<div class="table-responsive">
+					<table class="table" width="100%">
+						<thead>
+							<tr>
+								<th scope="col">Event</th>
+								<th scope="col">Jenis</th>
+								<th scope="col">Jumlah</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>Hackathon</p>
+								</td>
+								<td>
+									<p>Reguler</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 50,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<p>VIP</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 100,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<h4>Total SEMUA</h4>
+								</td>
+								<td>
+									<h5></h5>
+								</td>
+								<td>
+									<p>Rp 150,000</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Order Details Area =================-->
+<?php
+}
+if ($_GET['page']==5){
+?>
+	<!--================Order Details Area =================-->
+	<section class="order_details p_120">
+		<div class="container">
+			<div class="alert alert-success" role="alert">
+			  Terima kasih telah menggunakan kampuslink untuk pemesanan tiket, jika ada saran atau komentar tentang kami, silahkan kirimkan pesan melalui email@email.com .
+			</div>
+			<div class="row order_d_inner">
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Info Pembayaran</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Kode Pembayaran</span> : #xyz</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Tanggal Pemesanan</span> : 2 Januari 2019</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Total</span> : Rp 100,000</a>
+							</li>
+							<li>
+								<a href="#">
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+									<span>Status</span> : Pembayaran Berhasil</a>
+									<!-- <span>Status</span> : Menunggu Pembayaran</a> -->
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Organisasi</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama Organisasi</span> : Neo Telemetri</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Waktu Pembayaran</span> : -</a>
+							</li>
+							<li>
+								<a href="tiket.php" style="color: blue">
+									<span>Link Tiket</span> : Klik Disini</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="details_item">
+						<h4>Pembeli</h4>
+						<ul class="list">
+							<li>
+								<a href="#">
+									<span>Nama</span> : Nama Lengkap</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Kampus</span> : Universitas Andalas</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Fakultas</span> : Teknik</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>Jurusan </span> : Teknik Mesin</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="order_details_table">
+				<h2>Detail Pembayaran</h2>
+				<div class="table-responsive">
+					<table class="table" width="100%">
+						<thead>
+							<tr>
+								<th scope="col">Event</th>
+								<th scope="col">Jenis</th>
+								<th scope="col">Jumlah</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>Hackathon</p>
+								</td>
+								<td>
+									<p>Reguler</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 50,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<p>VIP</p>
+								</td>
+								<td>
+									<h5>x 02</h5>
+								</td>
+								<td>
+									<p>Rp 100,000</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<h4>Total SEMUA</h4>
+								</td>
+								<td>
+									<h5></h5>
+								</td>
+								<td>
+									<p>Rp 150,000</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Order Details Area =================-->
+<?php
+}
+?>
 
 	<!--================ start footer Area  =================-->
 	<footer class="footer-area section_gap">
@@ -301,23 +797,58 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="vendors/lightbox/simpleLightbox.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<script src="vendors/jquery-ui/jquery-ui.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.js"></script>
-	<script src="js/theme.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="vendors/lightbox/simpleLightbox.min.js"></script>
+<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope-min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="vendors/jquery-ui/jquery-ui.js"></script>
+<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+<script src="vendors/counter-up/jquery.counterup.js"></script>
+<script src="js/theme.js"></script>
+<!-- js confirmasion.php -->
+<script type="text/javascript">
+$(document).ready(function () {
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 3, 2019 8:59:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  // document.getElementById("getting-started").innerHTML = days + "d " + hours + "h "
+  // + minutes + "m " + seconds + "s ";
+   document.getElementById("waktu_pembayaran").innerHTML = hours + ":"
+  + minutes + ":" + seconds;
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("waktu_pembayaran").innerHTML = "KADALUARSA";
+  }
+}, 1000);
+});
+</script>
 </body>
 
 </html>
